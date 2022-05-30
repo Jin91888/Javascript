@@ -61,8 +61,94 @@ type 属性不是必需的。 JavaScript 是 HTML 中的默认脚本语言。
 <script src="myScript1.js"></script>
 <script src="myScript2.js"></script>   
     
-    
+四，JS输出
+   JS显示可能性
+   JS可以以不同的方式“显示”数据。
+   写入HTML元素innerHTML
+   写入HTML输出document.write()
+   写入警报框windows.alert()
+   写入浏览器控制台console.log()
    
-    
-    
-    
+   使用内部HTML
+   要访问HTML元素，JS可以使用该document.getElementById(id)方法
+   document.getElementById(id)方法
+
+  <!DOCUMENT html>
+   <html>
+    <body>
+     <h1>My first Web page</h1>
+     <p>My first paragraph</p>
+     <p id="demo"></p>
+     <script>
+      document.getElementById("demo").innerHTML;
+      </script>
+     </body>
+    </html>
+   
+   once more:
+   <!DOCTYPE html>
+   <html>
+    <body>
+     <h1>This is my first web page</h1>
+     <p>This is my first paragraph</p>
+     <p id="demo"></p>
+     <script>
+      document.GetElementById("demo").innerHTML=5+6;
+     </script>
+    </body>
+   </html>
+   
+   
+   id属性定义HTML元素，innerHTML属性定义HTML内容。
+   
+  使用document.write()
+   出于测试目的，使用起来很方便。document.write():
+   
+   <!DOCUMENT html>
+   <html>
+    <body>
+     <h1>This is my first web page</h1>
+     <p>This is my first paragraph</p>
+     <p>文档加载完成后，切勿调用document.write(),它将覆盖整个文档</p>
+     <script>
+      document.write(5+6);
+     </script>
+    </body>
+   </html>
+   
+   注意：加载HTML文档后使用documrnt.write() 将删除所有现有的HTML。
+   <!DOCTYPE html>
+   <html>
+    <body>
+     <h1>This is my first web page</h1>
+     <p>This is my  first paragraph</p>
+     <
+   
+   once more:
+   <!DOCTYPE html>
+   <html>
+    <body>
+     <h1>This is my first web page</h1>
+     <p>this is my first paragraph</p>
+     <button type="button" onclick="document.write(5+6)">Try it</button>
+    </body>
+   </html>
+     
+   使用 window.alert()  
+     <!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+
+<script>
+window.alert(5 + 6);                     
+</script>
+
+</body>
+</html>
+     
+     
+
+      
