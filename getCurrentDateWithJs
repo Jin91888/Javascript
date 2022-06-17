@@ -1,0 +1,42 @@
+new Datw() 对象
+display the date as a full text string
+such as "Fri Jun 17 2022 10:54:59 GMT+0100(British Summer Time)"
+
+that ocntains the current date,time,and time zone
+
+const date = new Date();
+console.log(date);//Fri Jun 17 2022 11:27:28 GMT+0100(British Summer Time)
+
+operate on a object by using JS methods:
+
+
+how to use JS Date Methods
+The date object supports numerous date methods,
+below we will only use three methods:
+
+getFullYear() 
+
+use this method to get this year as a four digit number(yyyy),for example 2022
+
+getMonth()
+
+this method gets the month as a number(0-11)
+2 for March
+bc a zero based index(meaning it starts from 0)
+
+getDate()
+this method gets the day as a number(1-31)
+
+in all:
+
+const date = new Date();
+
+let day = date.getDate();
+
+let month = date.getMonth();
+
+let year = date.getFullYear();
+
+//This argument can be altered based on how we want the date's format to apear
+
+let currentDate = 
