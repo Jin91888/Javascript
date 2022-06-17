@@ -1,0 +1,50 @@
+how to use the toJSON() method
+
+returns date in the yyyy-mm-dd format 
+
+*in addtion to means apart from
+
+let date =  new Date().toJSON();
+console.log(date); //2022-06-17 T11:06:50.369Z
+
+now we want only the current date,we can use the slice() method this way to get the first 10 char
+characters
+
+let currentDate = new Date().toJSON().slice(0,10);
+console.log(curentDate);//"2022-06-17"
+
+How to use toLocalDateString()
+
+This is another simple methos that returns the date object as a srting
+using local conventions.
+
+the date format differs between languages,and this method accepts an argument to correcct that
+
+
+begin by pass an argument:
+let date = new Date().toLocalDateString();
+console.log(date); //6/17/2022
+
+let dadte = new Date().toLocalDateString("de-DE");
+console.log(date); //17.6.2022
+
+How to use Moment.js
+
+moment is one of the popular date packages available to everyone,we can use it to get the current 
+date as well
+
+var date = moment();
+var currentDate = datde.format('D/MM/YYYY');
+console.log(currentDate);    //17/06/2022
+
+什么是axios？
+工程中axios-ajax的封装：
+1.什么是axios?有什么特性？
+axios是一个基于promise 的HTTP库，可以用在浏览器或者node.js中。
+
+axios提供两个http请求适配器，XHP和HTTP.
+
+
+
+
+
